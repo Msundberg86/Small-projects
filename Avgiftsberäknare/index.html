@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Avgiftsberäknaren</title>
+  </head>
+  <body>
+    <div class="container">
+      <header><h1>Avgiftsberäknaren för barnomsorg</h1></header>
+
+      <h3 class="post-header">
+        Avgift för barn 1-3 år är.
+      </h3>
+      <ul>
+        <li>Barn1: 3% av inkomsten dock högst 1510kr.</li>
+        <li>Barn2: 2% av inkomsten dock högst 1007kr.</li>
+        <li>Barn3: 1% av inkomsten dock högst 503kr.</li>
+        <li>Barn4: ingen avgift.</li>
+      </ul>
+      <h3>Avgifter för barn 3-5 år för barn i förskola och fritidshem.</h3>
+      <ul>
+        <li>Barn1: 2% av inkomsten dock högst 1007kr.</li>
+        <li>Barn2: 1% av inkomsten dock högst 503kr</li>
+        <li>Barn3: 1% av inkomsten dock högst 503kr</li>
+        <li>Barn4: ingen avgift.</li>
+      </ul>
+      <p>
+        Den 1 augusti det år barnet fyller tre år ändras avgiften, oavsett
+        vilket datum barnet fyller år. Om totala inkomsten överskrider
+        <strong>50340kr</strong> så betalar man alltid maxta. Avgift beräknas
+        för barn mellan 1-12 år.
+      </p>
+
+      <ul>
+        <li>
+          Barn1:
+          <input
+            class="txtFee1 txtFee"
+            name="txtBirthDate1"
+            type="number"
+            maxlength="6"
+          /><span
+            id="txtFees1"
+            readonly="true"
+            style="font-weight:bold;"
+            zn_id="46"
+          ></span>
+        </li>
+        <li>
+          Barn2:
+          <input
+            class="txtFee2 txtFee"
+            name="txtBirthDate2"
+            type="number"
+            maxlength="6"
+          /><span
+            id="txtFees2"
+            readonly="true"
+            style="font-weight:bold;"
+            zn_id="46"
+          ></span>
+        </li>
+        <li>
+          Barn3:
+          <input
+            class="txtFee3 txtFee"
+            name="txtBirthDate3"
+            type="number"
+            maxlength="6"
+          /><span
+            id="txtFees3"
+            readonly="true"
+            style="font-weight:bold;"
+            zn_id="46"
+          ></span>
+        </li>
+      </ul>
+
+      <br />
+
+      <p class="income-p">Familjens inkomst:</p>
+
+      <input class="income txtFee" type="number" maxlength="6" value="0" />
+
+      <button class="calculate">Räkna ut avgiften</button>
+
+      <p class="summa-avgift">
+        <span
+          id="lblTotalFees"
+          class="HeadingBold"
+          style="float: none;"
+          zn_id="13"
+          >Summa avgift:</span
+        >
+      </p>
+      <p class="result">
+        <span
+          id="totalFee"
+          readonly="true"
+          style="font-weight:bold;"
+          zn_id="46"
+        ></span>
+      </p>
+
+      <script src="scripts.js"></script>
+    </div>
+  </body>
+</html>
