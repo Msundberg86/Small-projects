@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Avgiftsberäknaren</title>
+  </head>
+  <body style="width: 350px; margin: auto;">
+    <div
+      style="height: 500px; padding: 20px; position: relative; background: #fff"
+    >
+      <img
+        src="https://helsingborg.se/wp-content/uploads/2017/05/helsingborg-1.svg"
+        alt="Gå till startsidan"
+        style="width: 50%"
+      />
+      <h3>Avgiftsberäkning</h3>
+
+      <p>
+        Ange födelsedatum på barnen i årtal. Ex 2019. Har ni mer än 3 barn så är
+        det ingen avgift för fjärde barnet.
+      </p>
+      <!-- <div style="padding: 20px; background: #fff; margin-left: 0px"> -->
+      <p>
+        Barn1:
+        <input
+          class="txtFee1 txtFee"
+          name="txtBirthDate1"
+          type="number"
+          maxlength="6"
+        /><span id="txtFees1" readonly="true" style="font-weight:bold;"></span>
+      </p>
+
+      <p>
+        Barn2:
+        <input
+          class="txtFee2 txtFee"
+          name="txtBirthDate2"
+          type="number"
+          maxlength="6"
+        /><span id="txtFees2" readonly="true" style="font-weight:bold;"></span>
+      </p>
+
+      <p>
+        Barn3:
+        <input
+          class="txtFee3 txtFee"
+          name="txtBirthDate3"
+          type="number"
+          maxlength="6"
+        /><span id="txtFees3" readonly="true" style="font-weight:bold;"></span>
+      </p>
+
+      <!-- </div> -->
+      <p class="income-p">Ange familjens inkomst i kr per månad före skatt:</p>
+
+      <input
+        style="font-size: 10px"
+        class="income txtFee"
+        type="number"
+        maxlength="6"
+      />
+
+      <button class="calculate" id="calculate">Räkna ut avgiften</button>
+
+      <br />
+      <p class="summa-avgift"><span id="lblTotalFees">Summa avgift:</span></p>
+      <p class="result">
+        <span id="totalFee" readonly="true"></span>
+      </p>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>

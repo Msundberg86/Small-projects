@@ -1,0 +1,35 @@
+body {
+  font-family: roboto;
+}
+
+.txtFee {
+  border-radius: 4px;
+}
+.post-header {
+  margin-top: 30px;
+}
+
+.income {
+  margin-left: 0px;
+  margin-bottom: 15px;
+}
+
+.calculate:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  background-color: #f7f7f7;
+}
+
+.result {
+  margin-top: 10px;
+  margin-left: 45px;
+}
+
+.summa-avgift {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+h3 {
+  font: bold;
+}

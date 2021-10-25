@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: roboto;
+}
+
+.container {
+  width: 700px;
+  margin: 0 auto;
+  background-color: #ffff;
+}
+
+header {
+  border-top: 5px solid #812b2b;
+  padding: 15px;
+  text-align: center;
+  background-color: #e2e2e2;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+h3,
+p {
+  margin-left: 15px;
+}
+
+ul {
+  margin-left: 30px;
+  padding: 15px 15px;
+  list-style: none;
+}
+
+li {
+  margin-bottom: 5px;
+}
+.txtFee {
+  border-radius: 4px;
+}
+.post-header {
+  margin-top: 30px;
+}
+
+.income {
+  margin-left: 45px;
+}
+.calculate {
+  height: 30px;
+  padding: 0 20px;
+  border-radius: 10px;
+  box-shadow: 6px 6px 13px 0px #aaaaaa;
+  text-decoration: none;
+  background: linear-gradient(to bottom, #5c0000 15%, #f51212 100%);
+  background-color: #2e466e;
+  font-weight: bold;
+  color: #ffff;
+}
+
+.calculate:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  background-color: #f7f7f7;
+}
+
+.result {
+  margin-top: 10px;
+  margin-left: 45px;
+}
+
+.summa-avgift {
+  margin-top: 15px;
+  font-weight: bold;
+}
